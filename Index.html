@@ -4,110 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kerala Tourisam</title>
+    <title>Kerala Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header style="display: flex; ">
-        <img src="kerala.jpg" width="200" height="200">
-        <marquee>
-            <h1>Kerala Tourisam</h1>
-        </marquee>
+<body class="bg-light">
+    <div class="custom-bg">
+        <h1 class="custom-bg text-center text-green" style="--bs-text-opacity: .5;">Welcome to Kerala!</h1>
+    </div>
 
-    </header>
-    <nav style="display: flex; 
-    justify-content: space-around; 
-    padding: 10px 0;  
-    width: 100%; ">
-        <a href="#Home">HOME||</a>
-        <a href="#Aboutkerala">AbourKerala</a>
-        <a href="#TopDestinations">Top Destinations</a>
-        <a href="#District">District</a>
-        <a href="#ContactUS">Contact US</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kerala Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#AboutKerala">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#TopDestinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#District">Districts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ContactUS">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section id="Home">
-        <h4>Welcome to Kerala!</h4>
-        <p>Come and enjoy our culture!</p>
 
-    </section>
-
-    <section id="AboutKerala">
-        <h4>About Kerala</h4>
-        <p>Information about the culture and heritage of Kerala.</p>
-        <article>
+    <!-- About Kerala Section -->
+    <section id="AboutKerala" class="aboutkerala py-5">
+        <div class="container text-center">
+            <h4 class="mb-3">About Kerala</h4>
+            <p class="lead">Explore the rich culture, heritage, and beauty of God's Own Country.</p>
             <p>
-                Kerala (English: /ˈkɛrələ/ ⓘ/ KERR-ə-lə), called Keralam in Malayalam (Malayalam: [keːɾɐɭɐm] ⓘ), is a
-                state on the Malabar Coast of India.[15] It was formed on 1 November 1956, following the passage of the
-                States Reorganisation Act, by combining Malayalam-speaking regions of the erstwhile regions of Cochin,
-                Malabar, South Canara, and Travancore.[16][17] Spread over 38,863 km2 (15,005 sq mi), Kerala is the 21st
-                largest Indian state by area. It is bordered by Karnataka to the north and northeast, Tamil Nadu to the
-                east and south, and the Lakshadweep Sea[18] to the west. With 33 million inhabitants as per the 2011
-                census, Kerala is the 13th-largest Indian state by population. It is divided into 14 districts with the
-                capital being Thiruvananthapuram. Malayalam is the most widely spoken language and is also the official
-                language of the state.[19]
-
-                The Chera dynasty was the first prominent kingdom based in Kerala. The Ay kingdom in the deep south and
-                the Ezhimala kingdom in the north formed the other kingdoms in the early years of the Common Era (CE).
-                The region had been a prominent spice exporter since 3000 BCE.[20] The region's prominence in trade was
-                noted in the works of Pliny as well as the Periplus around 100 CE. In the 15th century, the spice trade
-                attracted Portuguese traders to Kerala, and paved the way for European colonisation of India. At the
-                time of Indian independence movement in the early 20th century, there were two major princely states in
-                Kerala: Travancore and Cochin. They united to form the state of Thiru-Kochi in 1949. The Malabar region,
-                in the northern part of Kerala, had been a part of the Madras province of British India, which later
-                became a part of the Madras State post-independence. After the States Reorganisation Act, 1956, the
-                modern-day state of Kerala was formed by merging the Malabar district of Madras State (excluding Gudalur
-                taluk of Nilgiris district, Lakshadweep Islands, Topslip, the Attappadi Forest east of Anakatti), the
-                taluk of Kasaragod (now Kasaragod District) in South Canara, and the erstwhile state of Thiru-Kochi
-                (excluding four southern taluks of Kanyakumari district, and Shenkottai taluks).[17]
+                Kerala, also known as Keralam, is a state in India known for its backwaters, beaches, and hill stations.
+                From the lush greenery of the Western Ghats to the serene backwaters of Alleppey, Kerala offers something
+                for every traveler.
             </p>
-        </article>
+            <button class="btn btn-outline-success">Learn More</button>
+        </div>
     </section>
 
-    <section id="TopDestinations">
-        <h4>Top Destinations</h4>
-        <p>Discover the most beautiful places in Kerala.</p>
-        <ul>
-            <li>Tekkadi</li>
-            <li>Lakkidi</li>
-            <li>Kuttanad</li>
-            <li>Moonar</li>
-            <li>Varkala</li>
-        </ul>
+    <!-- Top Destinations -->
+    <section id="TopDestinations" class="container py-5">
+        <h4 class="text-center mb-4">Top Destinations in Kerala</h4>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="kerala-tourism-1536x864.jpg" class="card-img-top" alt="Tekkadi">
+                    <div class="card-body">
+                        <h5 class="card-title">Tekkadi</h5>
+                        <p class="card-text">Known for its wildlife sanctuary and picturesque views.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="lakkidi.JPG" class="card-img-top" alt="Lakkidi">
+                    <div class="card-body">
+                        <h5 class="card-title">Lakkidi</h5>
+                        <p class="card-text">Experience serene hill stations and lush greenery.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="kuttanad.jfif" class="card-img-top" alt="Kuttanad">
+                    <div class="card-body">
+                        <h5 class="card-title">Kuttanad</h5>
+                        <p class="card-text">The 'Rice Bowl of Kerala' with mesmerizing backwaters.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="District">
-        <h4>District Information</h4>
-        <p>Learn about various districts in Kerala.</p>
-        <ul>
-            <li>Kasargod</li>
-            <li>Kannur</li>
-            <li>Kozhikode</li>
-            <li>Malapuram</li>
-            <li>Trissur</li>
-            <li>Palakad</li>
-            <li>Eranakulam</li>
-            <li>Kottayam</li>
-            <li>Alapuzha</li>
-            <li>Kollam</li>
-            <li>Pathanammtita</li>
-            <li>Trivandram</li>
-            <li>Waynad</li>
-            <li>Idukki</li>
-
-        </ul>
+    <!-- District Information -->
+    <section id="District" class="py-5 bg-success text-white">
+        <div class="container">
+            <h4 class="text-center mb-4">District Information</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Kasargod</li>
+                        <li>Kannur</li>
+                        <li>Kozhikode</li>
+                        <li>Malappuram</li>
+                        <li>Thrissur</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>Palakkad</li>
+                        <li>Ernakulam</li>
+                        <li>Kottayam</li>
+                        <li>Alappuzha</li>
+                        <li>Thiruvananthapuram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="ContactUS">
-        <fieldset>
-            <address>
-                <a href="kerlatoursisam@gmail.com">kerlatoursisam@gmail.com</a>
-            </address>
-
-        </fieldset>
-
-
+    <!-- Contact Section -->
+    <section id="ContactUS" class="py-5">
+        <div class="container text-center">
+            <h4>Contact Us</h4>
+            <p>Have questions or need help? Reach out to us!</p>
+            <a href="mailto:keralatourism@gmail.com" class="btn btn-outline-success">Email Us</a>
+        </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
